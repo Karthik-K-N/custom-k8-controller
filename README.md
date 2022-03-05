@@ -1,6 +1,6 @@
 # Writing Custom Kubernetes Controller and Webhooks
 
-### More details about this repository can be found in Medium blog
+### More details about this repository can be found in [Medium blog](https://medium.com/@Karthik-K-N/writing-custom-kubernetes-controller-and-webhooks-141230820e9)
 
 ## Create kind cluster and install certificate manager for testing
 ```text
