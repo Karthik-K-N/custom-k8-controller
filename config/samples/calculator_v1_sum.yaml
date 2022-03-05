@@ -1,0 +1,7 @@
+apiVersion: calculator.sample.domain/v1
+kind: Sum
+metadata:
+  name: sum-sample
+spec:
+  numberOne: -10
+  numberTwo: 20

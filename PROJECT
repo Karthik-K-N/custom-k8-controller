@@ -1,0 +1,19 @@
+domain: sample.domain
+layout:
+- go.kubebuilder.io/v3
+projectName: custom-k8-controller
+repo: github.com/Karthik-K-N/custom-k8-controller
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: sample.domain
+  group: calculator
+  kind: Sum
+  path: github.com/Karthik-K-N/custom-k8-controller/api/v1
+  version: v1
+  webhooks:
+    validation: true
+    webhookVersion: v1
+version: "3"

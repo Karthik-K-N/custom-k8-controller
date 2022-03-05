@@ -1,0 +1,24 @@
+# permissions for end users to edit sums.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: sum-editor-role
+rules:
+- apiGroups:
+  - calculator.sample.domain
+  resources:
+  - sums
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - calculator.sample.domain
+  resources:
+  - sums/status
+  verbs:
+  - get
